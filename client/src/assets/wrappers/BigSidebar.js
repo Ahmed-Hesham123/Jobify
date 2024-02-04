@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Wrapper = styled.aside`
   display: none;
@@ -12,50 +12,49 @@ const Wrapper = styled.aside`
       width: 250px;
       margin-left: -250px;
       transition: margin-left 0.3s ease-in-out;
-    }
-    .content {
-      position: sticky;
-      top: 0;
-    }
-    .show-sidebar {
-      margin-left: 0;
-    }
-    header {
-      height: 6rem;
-      display: flex;
-      align-items: center;
-      padding-left: 2.5rem;
-    }
-    .nav-links {
-      padding-top: 2rem;
-      display: flex;
-      flex-direction: column;
-    }
-    .nav-link {
-      display: flex;
-      align-items: center;
-      color: var(--text-secondary-color);
-      padding: 1rem 0;
-      padding-left: 2.5rem;
-      text-transform: capitalize;
-      transition: padding-left 0.3s ease-in-out;
-    }
-    .nav-link:hover {
-      padding-left: 3rem;
-      color: var(--primary-500);
-      transition: var(--transition);
-    }
-    .icon {
-      font-size: 1.5rem;
-      margin-right: 1rem;
-      display: grid;
-      place-items: center;
-    }
-    .active {
-      color: var(--primary-500);
-    }
-    .pending {
-      background: var(--background-color);
+      &.show-sidebar {
+        margin-left: 0;
+      }
+      .content {
+        position: sticky;
+        top: 0;
+        padding: 1rem;
+
+        header {
+          height: 6rem;
+          display: flex;
+          align-items: center;
+          padding-left: 2.5rem;
+        }
+        .nav-links {
+          display: flex;
+          flex-direction: column;
+          padding-top: 2rem;
+          .nav-link {
+            display: flex;
+            align-items: center;
+            padding: 1rem 0;
+            padding-left: 2.5rem;
+            color: var(--text-secondary-color);
+            transition: padding-left 0.3s ease-in-out;
+            &:hover {
+              padding-left: 3rem;
+              color: var(--primary-500);
+              transition: var(--transition);
+            }
+
+            &.active {
+              color: var(--primary-500);
+            }
+            .icon {
+              font-size: 1.5rem;
+              margin-right: 1rem;
+              display: grid;
+              place-items: center;
+            }
+          }
+        }
+      }
     }
   }
 `;

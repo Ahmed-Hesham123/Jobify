@@ -1,11 +1,11 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 const Wrapper = styled.div`
   position: relative;
   .logout-btn {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     gap: 0 0.5rem;
   }
   .img {
@@ -23,21 +23,21 @@ const Wrapper = styled.div`
     visibility: hidden;
     border-radius: var(--border-radius);
     background: var(--primary-500);
-  }
-  .show-dropdown {
-    visibility: visible;
-  }
-  .dropdown-btn {
-    border-radius: var(--border-radius);
-    padding: 0.5rem;
-    background: transparent;
-    border-color: transparent;
-    color: var(--white);
-    letter-spacing: var(--letter-spacing);
-    text-transform: capitalize;
-    cursor: pointer;
-    width: 100%;
-    height: 100%;
+    &.show-dropdown {
+      visibility: visible;
+    }
+    .dropdown-btn {
+      cursor: pointer;
+      border-radius: var(--border-radius);
+      padding: 0.5rem;
+      background: transparent;
+      border-color: transparent;
+      width: 100%;
+      height: 100%;
+      color: var(--white);
+      letter-spacing: var(--letter-spacing);
+      text-transform: capitalize;
+    }
   }
 `;
 
